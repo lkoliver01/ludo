@@ -13,4 +13,24 @@
 }
 header {
     background-color: var(--cor-primaria);
+    display: flex;
+    padding: 1rem;
 }
+#form-buscar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+#buscar{
+    flex-grow: 1;
+    border-radius: 5;
+    
+}
+
+.icon-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+#bt
