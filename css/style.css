@@ -24,7 +24,8 @@ header {
 #buscar{
     flex-grow: 1;
     border-radius: 5;
-    
+    border: none;
+    outline: none;
 }
 
 .icon-link{
@@ -34,5 +35,9 @@ header {
     margin: 0 0.5rem;
 }
 #btn-buscar {
-    
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 11%;
+    cursor: pointer;
 }
