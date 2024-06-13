@@ -82,9 +82,10 @@ nav a:first-child{
     background-color: var(--cor-segundaria);
     border: 3px solid var(--cor-segundaria);
     border-radius: 8px;
-    
+    width: ;
+    height: ;
 }
-.card:overflow 
+
 
 .card-img img {
     border-radius: 8px 8px 0 0;
