@@ -82,7 +82,7 @@ nav a:first-child{
     background-color: var(--cor-segundaria);
     border: 3px solid var(--cor-segundaria);
     border-radius: 8px;
-    width:  20px;
+    width:  206px;
     height: ;
 }
 
@@ -95,4 +95,7 @@ nav a:first-child{
     color: var(--branco);
     padding: 1rem;
     text-align: center;
+}
+#btn{
+    color: #FDACE0;
 }
