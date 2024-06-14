@@ -22,8 +22,63 @@
             <img src="imgs/help.png" alt="" width="40px">
             duvidas</a>
     </header>
+
     
     <nav>
         <a href="">Catálago</a>
         <a href="">Sobre a Loja</a>
     </nav>
+    <section>
+        <form action="" enctype="multipart/form-data">
+            <label for="nome">nome</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="senha">senha</label>
+            <input type="password" name="senha" id="senha">
+
+            <label for="num">numero</label>
+            <input type="number" name="numero" id="num">
+
+            <label for="email">email</label>
+            <input type="email " name="email" id="name">
+
+            <label for="buscar">buscar</label>
+            <input type="search" name="buscar " id="buscar">
+            
+            <fieldset>
+                <legend> Qual sua linguagem favorita?</legend>
+                <label for="html">HTML</label>
+                <input type="radio" name="lang" id="html" value="html">
+
+                <label for="css">CSS</label>
+                <input type="radio" name="lang" id="css" value="css">
+                
+            </fieldset>
+            <fieldset>
+                <legend>Como voce chega no senac?</legend>
+
+                <input type="checkbox" name="trasporte[]" id="onibus" value="onibus">
+                <label for="onibus">Onibus</label>
+
+                <input type="checkbox" name="transporte" id="a pe" value="a pe">
+                <label for="a pe">A pé</label>
+            </fieldset>
+            
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor">
+
+            <label for="foto">foto de perfil</label>
+            <input type="file" name="foto" id="foto">
+
+            <label for="tam">Escolha o tamanho</label>
+            <select name="tamanho-roupa" id="tam">
+                <option value="p">P</option>
+                <option value="m">M</option>
+                <option value="G">G</option>
+            </select>
+
+            <input type="submit" value="enviar">
+        </form>
+    </section>  
+        
+</body>
