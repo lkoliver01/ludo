@@ -31,15 +31,18 @@ header {
     border: none;
     outline: none;
     padding: 0.5rem;
-    
-   
+     
 }
-
 .icon-link{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 0.5rem;
+}
+#txt-ed{
+    text-align: center;
+    background-color:var(--cor-primaria);
+    color: white;
 }
 #btn-buscar {
     background-color: transparent;
@@ -72,22 +75,23 @@ nav a:first-child{
     right: 10%;
 
 }
+
 .conteudo{
-    margin: 1rem;
+    margin: 4rem;
 }
 .conteudo h1{
     text-align: center;
 }
 .card-container{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(7,1fr);
     gap: 1rem;
 }
 .card {
-    background-color: var(--cor-segundaria);
-    border: 3px solid var(--cor-segundaria);
+    background-color: var(--cor-primaria) ;
+    border: 5px solid var(--cor-primaria);
     border-radius: 8px;
-    width:  206px;
+    width:  210px;
     height: ;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
     
@@ -95,6 +99,9 @@ nav a:first-child{
 .card:hover{
     transform: scale(1.2)
     
+}
+a {
+    text-decoration: none;
 }
 
 
@@ -104,8 +111,8 @@ nav a:first-child{
     
 }
 .card-content {
-    color: var(--branco);
-    padding: 1rem;
+    color: white;
+    padding: 0.5rem;
     text-align: center;
 }
 .botao{
@@ -121,4 +128,10 @@ nav a:first-child{
     background-color: blue;
     color: white;
     transform: scale(1.2)
+}
+footer{
+    background-color: #f464c3;
+    padding: 1rem;
+    text-align: center;
+    color: white;
 }
