@@ -86,6 +86,7 @@ nav a:first-child{
 
 .conteudo{
     margin: 4rem;
+
     
 }
 .conteudo h1{
@@ -108,7 +109,7 @@ nav a:first-child{
     width:  210px;
     height: ;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
-    
+   
 }
 .card:hover{
     transform: scale(1.2)
