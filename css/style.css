@@ -39,6 +39,7 @@ header {
     align-items: center;
     margin: 0 0.5rem;
 }
+
 #txt-ed{
     text-align: center;
     background-color:var(--cor-primaria);
@@ -50,6 +51,13 @@ header {
     position: absolute;
     right: 11%;
     cursor: pointer;
+}
+#bt-delete{
+    background-color: transparent;
+    border: none;
+    right: 50%;
+    cursor: pointer;
+
 }
 nav{
     display: grid;
@@ -78,9 +86,15 @@ nav a:first-child{
 
 .conteudo{
     margin: 4rem;
+    
 }
 .conteudo h1{
     text-align: center;
+}
+#cor1{
+    text-align: center; 
+    position: relative;
+    
 }
 .card-container{
     display: grid;
@@ -104,12 +118,26 @@ a {
     text-decoration: none;
 }
 
-
+main{
+    background-color: rgb(243, 220, 232);
+}
 
 .card-img img {
     border-radius: 8px 8px 0 0;
+
     
 }
+.botao{
+    right: 50% 50%;
+}
+.icon-add{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0.5rem;
+}
+    
+
 .card-content {
     color: white;
     padding: 0.5rem;

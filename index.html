@@ -10,7 +10,9 @@
 
 <body>
     <header>
-        <a href=""><h1>Ludofashion</h1></a>
+        <div id="cor1">
+            <a href=""><h1>Ludofashion</h1></a>
+        </div>
         <form action="" id="form-buscar">
             <input type="search" name=" buscar" id="buscar" placeholder="buscar...">
             <button type="submit" id="btn-buscar"><img src="imgs/searche.png" alt="" width="30px"></button>
@@ -26,10 +28,11 @@
     </header>
 
     <nav>
-        <a href="">Catálago</a>
-        <a href="">Sobre a Loja</a>
+        <a href=""><strong>Catálago</strong></a>
+        <a href=""><strong>Sobre a Loja</strong></a>
     </nav>
     <main>
+    
         <section id="banner">
             <div id="txt-banner">
                 <p>Promoção</p>
@@ -43,7 +46,6 @@
         </div>    
 
         <section class="conteudo">
-           
             <div class="card-container">
                 <div class="card">
                     <a href="prdutos.html">
@@ -51,12 +53,16 @@
                             <img decoding="async" src="imgs/roupa 1.jfif" alt="" width="200px" height="300px">
                         </div>
                         <div class="card-content">
+                           <details open> 
+                            <summary><strong>DETALHES</strong></summary>
                             <p><strong>R$ 500</strong> </p>
                             <p><strong>Verstido longo</strong></p>
                             <p><strong>Estampa florada bege</strong></p>
+                           </details>
                         </div>
                         <a href="" class="icon-link">
-                            <img src="imgs/delete.png" alt="" width="40px"></a>
+                            <img src="imgs/delete.png" alt="" width="40px">
+                        </a>
                     </a>
                 </div>
                 <div class="card">
@@ -65,10 +71,12 @@
                         <img decoding="async" src="imgs/roupa 2.jfif" alt="" width="200px" height="300px">
                     </div>
                     <div class="card-content">
-                        <p><strong>R$ 400</strong> </p>
-                        <p><strong>Vestido curto com manga</strong></p>
-                        <p><strong>branco</strong></p>
-                       
+                        <details>
+                            <summary><strong>DETALHES</strong></summary>
+                            <p><strong>R$ 400</strong> </p>
+                            <p><strong>Vestido curto com manga</strong></p>
+                            <p><strong>branco</strong></p>
+                        </details>
                     </div>
                     <a href="" class="icon-link">
                         <img src="imgs/delete.png" alt="" width="40px"></a>
@@ -80,9 +88,12 @@
                         <img decoding="async" src="imgs/roupa 3.jfif" alt="" width="200px" height="300px">
                     </div>
                     <div class="card-content">
-                        <p><strong>R$ 400</strong> </p>
-                        <p><strong>Vestido curto com manga</strong></p>
-                        <p><strong>Florido</strong></p>
+                        <details>
+                            <summary><strong>DETALHES</strong></summary>
+                            <p><strong>R$ 400</strong> </p>
+                            <p><strong>Vestido curto com manga</strong></p>
+                            <p><strong>Florido</strong></p>
+                        </details>
                     </div>
                     <a href="" class="icon-link">
                         <img src="imgs/delete.png" alt="" width="40px"></a>
@@ -94,9 +105,12 @@
                         <img decoding="async" src="imgs/roupa 4.jfif" alt="" width="200px" height="300px">
                     </div>
                     <div class="card-content">
-                        <p><strong>R$ 400</strong> </p>
-                        <p><strong>Vestido Curto</strong></p>
-                        <p><strong>Florido Amarelo</strong></p>
+                        <details>
+                            <summary><strong>DETALHES</strong></summary>
+                            <p><strong>R$ 400</strong> </p>
+                            <p><strong>Vestido Curto</strong></p>
+                            <p><strong>Florido Amarelo</strong></p>
+                    </details>
                     </div>
                     <a href="" class="icon-link">
                         <img src="imgs/delete.png" alt="" width="40px"></a>
@@ -108,9 +122,12 @@
                         <img decoding="async" src="imgs/roupa 5.jfif" alt="" width="200px" height="300px">
                     </div>
                     <div class="card-content">
-                        <p><strong>R$ 400</strong> </p>
-                        <p><strong>Vestido com Babado</strong></p>
-                        <p><strong>Roxo </strong></p>
+                        <details>
+                            <summary><strong>DETALHES</strong></summary>
+                            <p><strong>R$ 400</strong> </p>
+                            <p><strong>Vestido com Babado</strong></p>
+                            <p><strong>Roxo </strong></p>
+                        </details>
                     </div>
                     <a href="" class="icon-link">
                         <img src="imgs/delete.png" alt="" width="40px"></a>
@@ -122,9 +139,12 @@
                         <img decoding="async" src="imgs/roupa 3.jfif" alt="" width="200px" height="300px">
                     </div>
                     <div class="card-content">
-                        <p><strong>R$ 400</strong> </p>
-                        <p><strong>Vestido curto com manga</strong></p>
-                        <p><strong>Florido</strong></p>
+                        <details>
+                            <summary><strong>DETALHES</strong></summary>
+                            <p><strong>R$ 400</strong> </p>
+                            <p><strong>Vestido curto com manga</strong></p>
+                            <p><strong>Florido</strong></p>
+                    </details>
                     </div>
                     <a href="" class="icon-link">
                         <img src="imgs/delete.png" alt="" width="40px"></a>
@@ -132,16 +152,15 @@
                 </div>
                 <div class="card">
                     <a href="prdutos.html">
-                    <div class="card-img">
-                        <img decoding="async" src="imgs/roupa 3.jfif" alt="" width="200px" height="300px">
-                    </div>
                     <div class="card-content">
-                        <p><strong>R$ 400</strong> </p>
-                        <p><strong>Vestido curto com manga</strong></p>
-                        <p><strong>Florido</strong></p>
+                        <p><strong></strong> </p>
+                        <p><strong></strong></p>
+                        <p><strong></strong></p>
                     </div>
-                    <a href="" class="icon-link">
-                        <img src="imgs/delete.png" alt="" width="40px"></a>
+                    <div>
+                        <a href="" class="icon-add">
+                        <img src="imgs/add.png" alt="" width="80px"></a>
+                    </div>  
                     </a>   
                 </div>
                 
