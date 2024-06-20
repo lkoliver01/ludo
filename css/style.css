@@ -23,7 +23,6 @@ header {
     justify-content: center;
     position: relative
     
-    
 }
 #buscar{
     flex-grow: 0.75;
@@ -41,6 +40,7 @@ header {
 }
 
 #txt-ed{
+    padding: 1rem;
     text-align: center;
     background-color:var(--cor-primaria);
     color: white;
@@ -61,17 +61,19 @@ header {
 }
 nav{
     display: grid;
+    color: white;
     grid-template-columns: repeat(2,1fr);
     text-align: center;
     background-color: var(--cor-tres);
     padding: 0.5rem;
+   
 }
 nav a:first-child{
     border-right: 1px solid var(--preto);
 }
 #banner {
     width: 100%;
-    background-image: url(../imgs/woman.jpg);
+    background-image: url(../imgs/womanjpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -93,8 +95,10 @@ nav a:first-child{
     text-align: center;
 }
 #cor1{
+    color: white;
     text-align: center; 
     position: relative;
+    padding: 1rem;
     
 }
 .card-container{
@@ -137,7 +141,9 @@ main{
     align-items: center;
     margin: 10rem 0.5rem;
 }
-    
+.pentagono{
+    clip-path: polygon(100% 0, 100% 50%, 50% 100%, 50% 100%);
+}   
 
 .card-content {
     color: white;
