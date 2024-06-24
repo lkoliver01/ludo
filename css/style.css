@@ -1,7 +1,7 @@
 :root {
-     --cor-primaria: #77bb93;
-     --cor-segundaria:#3D1C31;
-     --cor-tres:#85c7e0;
+     --cor-primaria: #EFBC9B;
+     --cor-segundaria:#efbd9b80;
+     --cor-tres:#FBF3D5;
      --branco:WHITE;
      --preto: black;
 }
@@ -11,10 +11,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 header {
-    background-color: var(--cor-primaria);
+    background-color:var(--cor-primaria);
     display: flex;
     padding: 1rem;
+}
+main{
+    width: 100%;
+    flex-grow: 1;
+    background-image: url(../imgs/library1.jpg);
+    background-repeat: repeat;
+    position: relative;
 }
 #form-buscar {
     flex-grow: 1;
@@ -40,9 +52,9 @@ header {
 }
 
 #txt-ed{
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
-    background-color:var(--cor-primaria);
+    background-color:transparent;
     color: white;
 }
 #btn-buscar {
@@ -62,14 +74,19 @@ header {
 nav{
     display: grid;
     color: white;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     text-align: center;
-    background-color: var(--cor-tres);
+    background-color:var(--cor-tres) ;
     padding: 0.5rem;
+  
+}
+nav a  {
+    border-right: 2px solid var(--preto);
+    color: black;
    
 }
 nav a:first-child{
-    border-right: 1px solid var(--preto);
+    border-left: 2px solid var(--preto);
 }
 #banner {
     width: 100%;
@@ -86,6 +103,7 @@ nav a:first-child{
 
 }
 
+
 .conteudo{
     margin: 4rem;
 
@@ -94,46 +112,46 @@ nav a:first-child{
 .conteudo h1{
     text-align: center;
 }
-#cor1{
-    color: white;
+#cor1 img{
+    border: none;
+    position: relative;
+    top: 11%;
+    cursor: pointer;
+}
+#cor1 a {
     text-align: center; 
     position: relative;
     padding: 1rem;
-    
+    color:white
+
 }
 .card-container{
     display: grid;
-    grid-template-columns: repeat(7,1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(5,4fr);
+    gap: 4rem;
 }
 .card {
-    background-color: var(--cor-primaria) ;
-    border: 5px solid var(--cor-primaria);
+    background-color:var(--cor-segundaria);
+    border: 5px solid var(--cor-segundaria);
     border-radius: 8px;
-    width:  210px; 
+    width:  225px; 
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
    
 }
 .card:hover{
-    transform: scale(1.2)
+    transform: scale(1.1)
     
 }
 a {
     text-decoration: none;
 }
 
-main{
-    background-color: rgb(243, 220, 232);
-}
+
 
 .card-img img {
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 8px 8px; 
+}
 
-    
-}
-.botao{
-    right: 50% 50%;
-}
 .icon-add{
     display: flex;
     flex-direction: column;
@@ -165,7 +183,7 @@ main{
     transform: scale(1.2)
 }
 footer{
-    background-color: #f464c3;
+    background-color:var(--cor-primaria);
     padding: 1rem;
     text-align: center;
     color: white;
