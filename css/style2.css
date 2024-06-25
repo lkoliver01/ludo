@@ -10,17 +10,52 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(../imgs/library1.jpg);
+}
+header {
+    background-color:var(--cor-primaria);
+    display: flex;
+    padding: 1rem;
+}
+#form-buscar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+    
+}
+#buscar{
+    flex-grow: 0.75;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+     
+}
+#btn-buscar {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 11%;
+    cursor: pointer;
+}
+.icon-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem;
 }
 
 .sidebar {
-    position: fixed;
-    left: 15px;
-    top: 250px;
-    height: 60%;
+    position: absolute;
+    left: 9px;
+    top: 144px;
+    height: 80%;
     width: 250px;
     background-color: #333;
     color: #fff;
-    padding-top: 20px;
+   
     border-radius: 8px;
 }
 
@@ -51,14 +86,14 @@ nav{
     border-radius: 8px;
 }
 .card {
-    background-color:gray;
+    background-color:rgba(163, 160, 155, 0.39);
     border-radius: 1px; 
     height: 112px;
     margin: 0;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 .card:hover{
-    transform: scale(0.5rem.1)
+    background-color:black;
 }
 .card-container{
     display: grid;
@@ -82,5 +117,6 @@ nav{
     transform: scale(1.5);
 }
 .card-txt{
-     
+    color: white;
+    padding: 4px;  
 }
