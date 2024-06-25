@@ -1,5 +1,5 @@
 :root {
-    --cor-primaria: #EFBC9B;
+    --cor-primaria: #b6d66a;
     --cor-segundaria:#efbd9b80;
     --cor-tres:#FBF3D5;
     --branco:WHITE;
@@ -61,9 +61,9 @@ header {
 
 .sidebar a {
     display: block;
-    padding: 10px 20px;
+    padding: 68px 36px;
     color: #fff;
-    text-decoration: none;
+    
 }
 a{
     text-decoration: none;

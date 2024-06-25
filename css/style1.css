@@ -1,32 +1,21 @@
 :root {
-    --cor-primaria: #EFBC9B;
-    --cor-segundaria:#efbd9b80;
-    --cor-tres:#FBF3D5;
-    --branco:WHITE;
-    --preto: black;
+   --cor-primaria: #b6d66a;
+   --cor-segundaria:#efbd9b80;
+   --cor-tres:#FBF3D5;
+   --branco:WHITE;
+   --preto: black;
 }
 
-*{
-   padding: 0;
+body {
+   font-family: Arial, sans-serif;
    margin: 0;
-   box-sizing: border-box;
-}
-body{
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh;
+   padding: 0;
+   background-image: url(../imgs/library1.jpg);
 }
 header {
    background-color:var(--cor-primaria);
    display: flex;
    padding: 1rem;
-}
-main{
-   width: 100%;
-   flex-grow: 1;
-   background-image: url(../imgs/library1.jpg);
-   background-repeat: repeat;
-   position: relative;
 }
 #form-buscar {
    flex-grow: 1;
@@ -44,19 +33,6 @@ main{
    padding: 0.5rem;
     
 }
-.icon-link{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 0 0.5rem;
-}
-
-#txt-ed{
-   padding: 0.5rem;
-   text-align: center;
-   background-color:transparent;
-   color: white;
-}
 #btn-buscar {
    background-color: transparent;
    border: none;
@@ -64,12 +40,41 @@ main{
    right: 11%;
    cursor: pointer;
 }
-#bt-delete{
-   background-color: transparent;
-   border: none;
-   right: 50%;
-   cursor: pointer;
+.icon-link{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 0.5rem;
+}
 
+.sidebar {
+   position: absolute;
+   left: 9px;
+   top: 144px;
+   height: 80%;
+   width: 250px;
+   background-color: #333;
+   color: #fff;
+  
+   border-radius: 8px;
+}
+
+.sidebar a {
+   display: block;
+   padding: 30px 36px;
+   color: #fff;
+   
+}
+a{
+   text-decoration: none;
+}
+.sidebar a:hover {
+   background-color: #555;
+}
+
+.content {
+   margin-left: 250px;
+   padding: 20px;
 }
 nav{
    display: grid;
@@ -78,114 +83,40 @@ nav{
    text-align: center;
    background-color:var(--cor-tres) ;
    padding: 0.5rem;
- 
+   border-radius: 8px;
 }
-nav a  {
-   border-right: 2px solid var(--preto);
-   color: black;
-  
+.card {
+   background-color:rgba(163, 160, 155, 0.39);
+   border-radius: 1px; 
+   height: 177px;
+   margin: 0;
+   transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
-nav a:first-child{
-   border-left: 2px solid var(--preto);
-}
-#banner {
-   width: 100%;
-   background-image: url(../imgs/womanjpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 400px;
-   position: relative;
-   }
-#txt-banner {
-   position: absolute;
-   top: 10%;
-   right: 10%;
-
-}
-
-
-.conteudo{
-   margin: 4rem;
-
-   
-}
-.conteudo h1{
-   text-align: center;
-}
-#cor1 img{
-   border: none;
-   position: relative;
-   top: 11%;
-   cursor: pointer;
-}
-#cor1 a {
-   text-align: center; 
-   position: relative;
-   padding: 1rem;
-   color:white
-
+.card:hover{
+   background-color:black;
 }
 .card-container{
    display: grid;
-   grid-template-columns: repeat(5,4fr);
-   gap: 4rem;
+   grid-template-columns: repeat(5,8fr);
+   gap: 1rem;
+   align-content: center;
+   flex-direction: row;
+   margin-top: 1rem;
 }
-.card {
-   background-color:transparent;
-   border: transparent;
-   border-radius: 8px;
-   width:  225px; 
-   transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+.card-img {
+   float: none;
   
 }
-.card:hover{
-   transform: scale(1.1)
-   
-}
-a {
-   text-decoration: none;
-}
-
-
-
-.card-img img {
-   border-radius: 8px 8px 8px 8px; 
-}
-
-.icon-add{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 10rem 0.5rem;
-}
-.pentagono{
-   clip-path: polygon(100% 0, 100% 50%, 50% 100%, 50% 100%);
-}
-   
-
-.card-content {
-   border: 5px white;
-   color: white;
-   padding: 0.5rem;
-   text-align: center;
-}
-.botao{
-   border: solid 4px transparent;
-   border-radius: 8px;
-   color: white;
-   width: 50px;
-   height: 25px;
-   background-color: var(--cor-primaria);
+.card-img img{
+   height: 163px;
+   width: 119px;
+   border: 5px solid rgba(95, 95, 95, 0.384);
    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
-.botao:hover{
-   background-color: blue;
-   color: white;
-   transform: scale(1.2)
+.card-img:hover{ 
+   transform: scale(1.5);
 }
-footer{
-   background-color:var(--cor-primaria);
-   padding: 1rem;
-   text-align: center;
+.card-txt{
    color: white;
+   padding: 4px;  
 }
