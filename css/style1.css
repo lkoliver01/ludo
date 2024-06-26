@@ -1,5 +1,5 @@
 :root {
-   --cor-primaria: #b6d66a;
+   --cor-primaria: #4c8cc9;
    --cor-segundaria:#efbd9b80;
    --cor-tres:#FBF3D5;
    --branco:WHITE;
@@ -10,7 +10,7 @@ body {
    font-family: Arial, sans-serif;
    margin: 0;
    padding: 0;
-   background-image: url(../imgs/library1.jpg);
+   background-image: url(../imgs/library1.jp);
 }
 header {
    background-color:var(--cor-primaria);
@@ -46,17 +46,24 @@ header {
    align-items: center;
    margin: 0 0.5rem;
 }
+.baner {
+   width: 100%;
+   background-image: url(../imgs/library1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 400px;
+   position: relative;
+   }
 
 .sidebar {
    position: absolute;
    left: 9px;
-   top: 144px;
+
    height: 80%;
    width: 250px;
-   background-color: #333;
+   background-color:#4c8cc9;
    color: #fff;
   
-   border-radius: 8px;
 }
 
 .sidebar a {
@@ -81,12 +88,22 @@ nav{
    color: white;
    grid-template-columns: repeat(3,1fr);
    text-align: center;
-   background-color:var(--cor-tres) ;
+
    padding: 0.5rem;
    border-radius: 8px;
+   
+   gap: 1rem;
+   align-items: center;
+}
+nav a{
+   margin: 0.5rem;
+   background-color:#4c8cc9;
+   border-radius: 10px;
+   color: white;
 }
 .card {
-   background-color:rgba(163, 160, 155, 0.39);
+   background-color:rgb(255, 255, 255);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    border-radius: 4px; 
    height: 340px;
    width: 200px;
@@ -94,30 +111,31 @@ nav{
    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 .card:hover{
-   background-color:black;
+   box-shadow: 0 4px 8px 0 rgba(60, 126, 7, 0.404);
 }
 .card-container{
    display: grid;
    grid-template-columns: repeat(6,8fr);
-   gap: 1rem;
+   gap: 3rem;
    align-content: center;
    flex-direction: row;
-   margin-top: 1rem;
+   margin-top: 4rem;
+   margin: 4rem;
 }
 .card-content p{
    text-align: center;
-   color: white;
+   color: rgb(0, 0, 0);
 }
 .card-img {
    float: none;
    display: flex;
    justify-content: center;
-  
+   padding-top: 7px;
 }
 .card-img img{
    height: 163px;
    width: 119px;
-   border: 5px solid rgba(95, 95, 95, 0.384);
+   
    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 .card-img:hover{ 
