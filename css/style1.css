@@ -1,7 +1,7 @@
 :root {
    --cor-primaria: #4c8cc9;
-   --cor-segundaria:#efbd9b80;
-   --cor-tres:#FBF3D5;
+   --cor-segundaria:#88765f;
+   --cor-tres:#9EAC71;
    --branco:WHITE;
    --preto: black;
 }
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-   background-color:var(--cor-primaria);
+   background-color:var(--cor-tres);
    display: flex;
    padding: 1rem;
 }
@@ -28,7 +28,7 @@ header {
   
 
 }
-#form-buscar {
+#forma-buscar {
    flex-grow: 1;
    display: flex;
    align-items: center;
@@ -44,7 +44,7 @@ header {
    padding: 0.5rem;
     
 }
-#btn-buscar {
+#bt-buscar {
    background-color: transparent;
    border: none;
    position: absolute;
@@ -67,18 +67,18 @@ header {
    position: relative;
    }
 
-.sidebar {
+.menu-lt {
    position: absolute;
    left: 9px;
 
    height: 80%;
    width: 250px;
-   background-color:#4c8cc9;
+   background-color: var(--cor-tres);
    color: #fff;
   
 }
 
-.sidebar a {
+.menu-lt a {
    display: block;
    padding: 30px 36px;
    color: #fff;
@@ -87,11 +87,11 @@ header {
 a{
    text-decoration: none;
 }
-.sidebar a:hover {
+.menu-lt a:hover {
    background-color: #555;
 }
 
-.content {
+.menu-h {
    margin-left: 250px;
    padding: 20px;
 }
@@ -109,7 +109,7 @@ nav{
 }
 nav a{
    margin: 0.5rem;
-   background-color:#4c8cc9;
+   background-color:var(--cor-segundaria);
    border-radius: 10px;
    color: white;
 }
@@ -123,7 +123,7 @@ nav a{
    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 .card:hover{
-   box-shadow: 0 4px 8px 0 rgba(7, 59, 126, 0.404);
+   box-shadow: 0 4px 8px 0 rgba(185, 129, 26, 0.486);
 }
 .card-container{
    display: grid;
@@ -173,11 +173,14 @@ text-align:  right;
   text-decoration: none;
   cursor: pointer;
   border-radius: 0px;
-  background-color: #4c8cc9;
+  background-color: var(--cor-segundaria);
   padding: 15px 32px;
   font-size: 16px;
   color: white;
   
+}
+.bt:hover{
+   background-color: #555;
 }
 .data{
    text-align: center;
